@@ -31,6 +31,16 @@ app.get('/players', async (req, res) => {
     }
 })
 
+
+app.get('/mangutiorotador', async (req, res) => {
+  try{
+    
+    }catch(e){
+      res.status(500).send({'error': 'Maguito rotador de antonic roto...'})
+    }
+})
+
+
 app.get('/boom', async (req, res) => {
   res.status(500).json({ message: "My bad" })
 })
