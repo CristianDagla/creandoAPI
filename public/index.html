@@ -3,23 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premier League Players API Documentation</title>
+    <title>Electronica</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             padding: 20px;
-            background: linear-gradient(to right, red,rgb(146, 2, 2));
-            height: 100vh;
+            background-color: #00f;
+            color: #fff;
         }
 
         h1 {
             margin-bottom: 20px;
             text-align: center;
+            filter: drop-shadow(0 0 10px #000);
         }
 
         .endpoint {
             margin-bottom: 30px;
+            box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.445);
+            padding: 10px 20px;
+            background-color: #0000003d;
+        }
+
+        .endpoint img {
+            width: 300px;
         }
 
         .endpoint h2 {
@@ -28,43 +41,41 @@
 
         .endpoint p {
             margin-bottom: 5px;
+            font-weight: 600;
         }
+        .endpoint span{
+            font-size: 1.1rem;
+            font-weight: 800;
+        }
+
+        .centrarbtn{
+            display: flex;
+            justify-content: center;
+        }
+        .btn {  
+            text-decoration: none;
+            padding: 20px 10px;
+            background-color: #0000003d;
+            color: #fff;
+            text-align: center;
+            width: 40%;   
+            border-radius: 25px;
+            font-weight: 500;  
+        }
+
     </style>
 </head>
 <body>
-    <h1>Premier League Players API Documentation</h1>
+    <h1>¿Por que estudiar electronica?</h1>
 
     <div class="endpoint">
-        <h2>GET /</h2>
-        <p>Lorem.</p>
-        <p>Query Parameters:</p>
-        <ul>
-            <li><strong>page</strong> (optional): Specifies the page number for pagination. Default is 1.</li>
-            <li><strong>limit</strong> (optional): Specifies the number of items per page. Default is 10.</li>
-        </ul>
-        <pre>
-            <code>
-                [
-                    {
-                        ...
-                    },
-                    ...
-                ]
-            </code>
-        </pre>
+        <h2>El mundo de la electronica se encuentra en la alza</h2>
+        <span>¿Porque la alta demanda de este puesto?</span>
+        <p>La demanda en electrónica es alta debido a los constantes avances tecnológicos que impulsan la creación de dispositivos más avanzados y eficientes, así como a la amplia integración de la electrónica en la vida cotidiana. Desde teléfonos inteligentes hasta electrodomésticos inteligentes, la mayoría de las personas dependen de la electrónica para diversas tareas. Este constante flujo de innovación y necesidad práctica genera una demanda sostenida en la industria electrónica.</p>
+        <img src='https://pbs.twimg.com/media/Cc-7LkxUAAA_GmD.jpg:large' alt="">
+        <div class="centrarbtn">
+            <a href="https://www.google.com.ar/" class="btn">Donate</button>
+        </div>
     </div>
-
-    <div class="endpoint">
-        <h2>GET /helloworld</h2>
-        <p>Returns a JSON response with a greeting message.</p>
-        <pre>
-            <code>
-                {
-                    "message": "Hello world"
-                }
-            </code>
-        </pre>
-    </div>
-
 </body>
 </html>
