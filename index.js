@@ -53,7 +53,15 @@ app.get('/donate', async (req, res) => {
 
 app.get('/troll', async (req, res) => {
   try{
-    res.status(200).sendFile(path.join(__dirname,'donate.html'));
+    res.status(200).sendFile(path.join(__dirname,'troll.html'));
+    }catch(e){
+      res.status(500).send({'Error': 'Hay un error, lo sentimos'})
+    }
+})
+
+app.get('/index', async (req, res) => {
+  try{
+    res.status(200).sendFile(path.join(__dirname,'index.html'));
     }catch(e){
       res.status(500).send({'Error': 'Hay un error, lo sentimos'})
     }
