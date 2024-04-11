@@ -43,6 +43,22 @@ app.get('/errortry', async (req, res) => {
     }
 })
 
+app.get('/donate', async (req, res) => {
+  try{
+    
+    }catch(e){
+      res.status(500).send({'Error': 'Hay un error, lo sentimos'})
+    }
+})
+
+app.get('/troll', async (req, res) => {
+  try{
+    
+    }catch(e){
+      res.status(500).send({'Error': 'Hay un error, lo sentimos'})
+    }
+})
+
 app.put('/pedrito', async (req, res) => {
   try{
     //alert(variable_no_existente); Comentando esta variable hacemos que no exista ningun error
