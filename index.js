@@ -61,7 +61,7 @@ app.get('/troll', async (req, res) => {
 
 app.get('/index', async (req, res) => {
   try{
-    res.status(200).sendFile(path.join(__dirname,'index.html'));
+    res.status(200).sendFile(path.join(__dirname,'public/index.html'));
     }catch(e){
       res.status(500).send({'Error': 'Hay un error, lo sentimos'})
     }
